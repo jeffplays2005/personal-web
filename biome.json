@@ -6,13 +6,14 @@
 		"useIgnoreFile": false
 	},
 	"files": {
-		"ignoreUnknown": false
+		"includes": ["**", "!src/payload-types.ts", "!pnpm-lock.yaml", "!.next", "!dist", "!.turbo"],
+		"ignoreUnknown": true
 	},
 	"formatter": {
 		"enabled": true,
 		"attributePosition": "auto",
 		"bracketSpacing": true,
-		"indentStyle": "space",
+		"indentStyle": "tab",
 		"indentWidth": 2,
 		"lineEnding": "lf",
 		"lineWidth": 100,
@@ -37,7 +38,15 @@
 	},
 	"javascript": {
 		"formatter": {
-			"quoteStyle": "double"
+			"arrowParentheses": "always",
+			"attributePosition": "auto",
+			"bracketSameLine": false,
+			"bracketSpacing": true,
+			"jsxQuoteStyle": "double",
+			"quoteProperties": "asNeeded",
+			"quoteStyle": "double",
+			"semicolons": "asNeeded",
+			"trailingCommas": "all"
 		}
 	},
 	"assist": {
