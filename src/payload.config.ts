@@ -5,6 +5,7 @@ import { lexicalEditor } from "@payloadcms/richtext-lexical"
 import { buildConfig } from "payload"
 import sharp from "sharp"
 import { Media } from "./data-layer/collections/Media"
+import { Projects } from "./data-layer/collections/Projects"
 import { Users } from "./data-layer/collections/Users"
 
 const filename = fileURLToPath(import.meta.url)
@@ -25,7 +26,7 @@ export default buildConfig({
 	graphQL: {
 		disable: true,
 	},
-	collections: [Users, Media],
+	collections: [Users, Media, Projects],
 	editor: lexicalEditor(),
 	secret: process.env.PAYLOAD_SECRET || "",
 	typescript: {
