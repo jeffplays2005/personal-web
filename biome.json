@@ -6,7 +6,15 @@
 		"useIgnoreFile": false
 	},
 	"files": {
-		"includes": ["**", "!src/payload-types.ts", "!pnpm-lock.yaml", "!.next", "!dist", "!.turbo"],
+		"includes": [
+			"**",
+			"!src/payload-types.ts",
+			"!pnpm-lock.yaml",
+			"!.next",
+			"!dist",
+			"!.turbo",
+			"!**/payload/admin/importMap.js"
+		],
 		"ignoreUnknown": true
 	},
 	"formatter": {
